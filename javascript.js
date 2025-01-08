@@ -1,12 +1,17 @@
+let playerScore = 0;
+let computerScore = 0;
+
 let playerChoice = startGame()
 let computerPick = computerChoice()
+
+
 console.log(playerChoice)
 console.log(computerPick)
 calcWin(playerChoice,computerPick)
 
 
 function startGame(){
-    let choice = prompt("Welcome to RPS. Choose Rock, Paper, or Scissors");
+    //let choice = prompt("Welcome to RPS. Choose Rock, Paper, or Scissors");
     if (choice.toLowerCase() == "rock"){
         return 0;
     }
